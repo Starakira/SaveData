@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/userImageViewCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/nameTextCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="24sp"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/userImageViewCard" />
+
+        <TextView
+            android:id="@+id/ageTextCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umur"
+            android:layout_toEndOf="@id/userImageViewCard"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/addressTextCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_toEndOf="@id/userImageViewCard"
+            android:layout_marginTop="70dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
